@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Appplication Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images.ico" type="image/x-icon">  
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Form
+      <span class="title_small">(web)</span>
+    </h1> 
+    <div class="apply_box">
+      <form action="submit.php" method="post" enctype="multipart/form-data">
+        <div class="form_control">
+          <label for="first_name">First Name:</label>
+          <input id="first_name" name="first_name"
+          placeholder="First name">
+        </div>
+
+        <div class="form_control">
+          <label for="last_name">Last Name:</label>
+          <input id="last_name" name="last_name"
+          placeholder="Last name">
+        </div>
+
+
+        <div class="form_control">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"
+          placeholder="email">
+        </div>
+
+          <div class="form_control">
+            <label for="job_role">Job-Role:</label>
+            <select name="job_role" id="job_role">
+              <option value="">Selected job role</option>
+              <option value="front end">front end</option>
+              <option value="back end">back end</option>
+            </select>
+          </div>
+
+          <div class="form_control">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="enter address here.."></textarea>
+          </div>
+
+          <div class="form_control">
+            <label for="city">City Name:</label>
+            <input id="city" name="city"
+            placeholder="city">
+          </div>
+
+          <div class="form_control">
+            <label for="pincode">Pin code:</label>
+            <input type="number" id="pincode" name="pincode"
+            placeholder="pincode">
+          </div>
+
+          <div class="form_control">
+            <label for="start date">Start date:</label>
+            <input value="2022-05-28" type="date" id="date" name="date">
+          </div>
+
+          <div class="form_control">
+            <label for="file">Choose file:</label>
+            <input type="file" id="file" name="file">
+          </div>
+
+          <div class="button">
+
+            <input class="submit" type="submit" name="submit" value="submit"></input>
+          </div>
+      </form> 
+      <img src="../../../images.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
